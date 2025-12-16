@@ -1,10 +1,19 @@
 'use client';
 
+import { useEffect, useState } from "react";
 import { useTheme } from '../context/ThemeContext';
 import { Sun, Moon } from 'lucide-react';
 
 export default function ThemeToggleButton() {
   const { theme, toggleTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Prevent hydration mismatch
+  if (!mounted) return null;
 
   return (
     <button

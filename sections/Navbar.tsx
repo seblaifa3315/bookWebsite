@@ -1,9 +1,9 @@
 "use client";
 
-import {Menu, X} from "lucide-react";
 import {useState, useEffect} from "react";
 import ThemeToggleButton from "../components/ThemeToggleButton";
 import MobileBurgerX from "@/components/MobileBurgerX";
+import { author, book } from "@/data/content";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -36,8 +36,8 @@ export default function Navbar() {
         <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? `bg-navbarBg backdrop-blur-md shadow-sm py-4` : "bg-transparent py-6"}`}>
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="flex items-center justify-between">
-                    <button onClick={() => scrollToSection("hero")} className={`text-2xl font-serif font-light tracking-wide text-navbarText hover:text-navbarTextHover transition-colors cursor-pointer`}>
-                        Kathleen Cronin
+                    <button onClick={() => scrollToSection("hero")} className={`text-2xl  font-serif font-light tracking-wide text-navbarText hover:text-navbarTextHover transition-colors cursor-pointer `}>
+                        {author.firstName} {author.lastName}
                     </button>
 
                     {/* Desktop Navigation */}

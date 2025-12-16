@@ -1,12 +1,12 @@
 import '../styles/globals.css';
-import { Poppins } from 'next/font/google';
+import { Poppins} from 'next/font/google';
 import type { Metadata } from "next";
 import { ThemeProvider } from '../context/ThemeContext';
 
 
 export const metadata: Metadata = {
-  title: "Next.js + Tailwind CSS Dark/Light Theme Toggle",
-  description: "A simple Next.js starter project using tailwind with global.css set up and dark/light theme toggle set up.",
+  title: "Kathleen Cronin - Lost Stars",
+  description: "Official website for Kathleen Cronin, author of 'Lost Stars'. Discover her books, biography, and latest news.",
   icons: {
     icon: '/favicon.png',
   },
@@ -15,7 +15,9 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
+  variable: "--font-sans",
 })
+
 
 export default function RootLayout({
   children,
@@ -23,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={`${poppins.variable}`}>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
       </body>

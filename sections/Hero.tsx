@@ -1,6 +1,7 @@
 "use client";
 
 import {ChevronDown} from "lucide-react";
+import { author, book } from "@/data/content";
 
 export default function Hero() {
     const scrollToBook = () => {
@@ -25,7 +26,7 @@ export default function Hero() {
                         <div className="relative">
                             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blob rounded-full blur-3xl opacity-20" />
                             <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-4 border-imageBorder/30 shadow-2xl shadow-imageGlow/20 transition-transform duration-500 hover:scale-105">
-                                <img src="https://images.squarespace-cdn.com/content/v1/6091c3e4f5f6071721c43f77/8722ad5e-1398-445d-afdb-30c7bd402a59/DSC06581.jpg" alt="Kathleen Cronin" className="w-full h-full object-cover" />
+                                <img src={author.portrait} alt={`${author.firstName} ${author.lastName}`} className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
@@ -34,7 +35,7 @@ export default function Hero() {
                     <div className="space-y-8 animate-fade-in text-center lg:text-left">
                         <div className="space-y-2">
                             <p className="text-sm tracking-[0.3em] uppercase text-accent font-light">Author</p>
-                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light tracking-tight text-title">Kathleen Cronin</h1>
+                            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light tracking-tight text-title">{author.firstName} {author.lastName}</h1>
                         </div>
 
                         <div className="space-y-6">
