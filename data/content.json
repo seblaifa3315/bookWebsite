@@ -1,18 +1,23 @@
 {
     "author": {
-        "firstName": "Kathleen",
-        "lastName": "Cronin",
-        "email": "kathleencronin@gmail.com",
-        "portrait": "https://images.squarespace-cdn.com/content/v1/6091c3e4f5f6071721c43f77/8722ad5e-1398-445d-afdb-30c7bd402a59/DSC06581.jpg",
+        "firstName": "John",
+        "lastName": "Lovejoy",
+        "email": "johnlovejoy@gmail.com",
+        "portrait": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/515924006_10234809219244895_8536574565611412069_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=PMtl1G13fcUQ7kNvwFzzPLR&_nc_oc=AdnnTWFPBTU7sQZE1jR91bQIGvswNx47_6DUKCawYSqnBKJstHr9lTqEcMzpEl3XyHw&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=JqjKuOgdjPsa1_TEXxKVVA&oh=00_AfnamH5iD-ASFRu7XRIxpWQcIWyEh8MhOJrOg-UTuaxEzw&oe=694DFA50",
         "instagram": "https://instagram.com",
         "X": "https://twitter.com",
         "facebook": "https://facebook.com"
     },
     "book": {
-        "title" : "Lost of Stars",
-        "coverPicture":"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/prismatic-romantic-novel-book-cover-template-design-3ccf99c330ac08940e85222819525b47_screen.jpg?ts=1734006040",
-        "amazonLink": "https://www.amazon.com/Stars-Starboard-Beach-Tracy-McJames/dp/B0G112BRR7/ref=sr_1_6?crid=24FNJ7DV3LFBT&dib=eyJ2IjoiMSJ9.L1lrrtKlFDS0PHS6FaNtbQA9cDu1E1Zv8MEwhcYBt18pm8QFYm6zvScuTk7pe9OjTneGHBm1bDT2eU1_Uzt53is7wbzHeKdHPu2Te4X8Lg9Xk-UsHk7mjFV_xckqstHPc4u25eF7QCFDUTZLZ-ke_GE3BpnMDKxyDiEaALfsoYvbt2L9oMMT3OR7VYdA5QGcaNQydiYysW1mDbLMOyK8PdCXtVBtz4ERg011rWj-Mi4.r62aiTjUFCclPr91XlPwkDUzuym9P7ScOBbOZiJNdO0&dib_tag=se&keywords=lost+stars&qid=1765821688&s=books&sprefix=lost+stars%2Cstripbooks%2C223&sr=1-6",
-        "rate": 4.8
+        "title" : "How we did it: Retired at 55: And how we continue to do it.",
+        "subtitle":"Land-lording for Dummies",
+        "coverPicture":"https://imgv2-2-f.scribdassets.com/img/word_document/762051426/original/432x574/fc7e8d1a0b/1751986308?v=1",
+        "amazonLink": "https://www.everand.com/book/762051426/How-We-Did-It-Retired-at-55-And-how-we-continue-to-do-it-Land-lording-for-Dummies",
+        "rate": 4.8,
+        "language": "English",
+        "Publisher": "BookBaby",
+        "ReleaseDate": "May 25, 2024",
+        "ISBN": "9798350955705"
     }
 
 }

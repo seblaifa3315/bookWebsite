@@ -26,7 +26,7 @@ export default function Hero() {
                         <div className="relative">
                             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-linear-to-br from-(--accent1) to-(--accent2) rounded-full blur-3xl opacity-20" />
                             <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-4 border-accent1/30 shadow-2xl shadow-accent1/20 transform hover:scale-105 transition-transform duration-500 ">
-                                <img src={author.portrait} alt={`${author.firstName} ${author.lastName}`} className="w-full h-full object-cover" />
+                                <img src={author.portrait} alt={`${author.firstName} ${author.lastName}`} className="w-full h-full object-cover object-[20%_center]" />
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export default function Hero() {
                         </div>
 
                         <div className="space-y-6">
-                            <p className="text-xl md:text-2xl font-light leading-relaxed text-secondary">Weaving stories that touch the soul and illuminate the human experience</p>
+                            <p className="text-xl md:text-2xl font-light leading-relaxed text-secondary">How we did it: Retired at 55: And how we continue to do it.</p>
                             <div className="h-px w-24 bg-accent1 lg:mx-0 mx-auto" />
                         </div>
 

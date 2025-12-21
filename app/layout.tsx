@@ -2,11 +2,12 @@ import '../styles/globals.css';
 import { Poppins} from 'next/font/google';
 import type { Metadata } from "next";
 import { ThemeProvider } from '../context/ThemeContext';
+import {author, book} from "@/data/content";
 
 
 export const metadata: Metadata = {
-  title: "Kathleen Cronin - Lost Stars",
-  description: "Official website for Kathleen Cronin, author of 'Lost Stars'. Discover her books, biography, and latest news.",
+  title: `${author.firstName} ${author.lastName}`,
+  description: `${book.title}`,
   icons: {
     icon: '/favicon.png',
   },

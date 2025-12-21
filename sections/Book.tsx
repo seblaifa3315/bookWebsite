@@ -22,26 +22,55 @@ export default function Book() {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <div className="inline-block px-4 py-2 bg-bg4 text-accent1 text-xs tracking-wider uppercase font-light">New Release</div>
-                            <h2 className="text-5xl lg:text-6xl font-serif font-light text-primary">{book.title}</h2>
+                            <h3 className="text-5xl lg:text-6xl font-serif font-light text-primary">{book.title}</h3>
+                            <h3 className="text-5xl lg:text-6xl font-serif font-light text-primary">{book.subtitle}</h3>
                             <div className="flex items-center">
                                 <StarRating rating={book.rate} />
                                 <span className="ml-2 text-secondary text-sm">{book.rate} out of 5 stars</span>
                             </div>
                         </div>
-                        <div className="space-y-6 text-secondary leading-relaxed text-lg font-light">
-                            <p>A sweeping tale of love, loss, and redemption that spans decades and continents. When Sarah discovers a collection of letters in her grandmother's attic, she uncovers a hidden past that changes everything she thought she knew about her family.</p>
+                        <div className="space-y-6 text-secondary leading-relaxed text-md font-light">
                             <p>
-                                Set against the backdrop of post-war Europe and modern-day New York, <em>Whispers of the Heart</em> weaves together two timelines in a story that explores the enduring power of love and the secrets that bind us across generations.
+                                <em>How we did it retired at 55 And How We Continue To Do It</em>. Land-lording for Dummies teaches you how, with the intention of renovating and renting it out, to find, negotiate and buy real estate. Plus, evaluate, and calculate your repair costs, rent, and return on investment.
                             </p>
-                            <p>A beautifully crafted debut that will stay with you long after you turn the final page.</p>
+                            <p>You will also learn suggestions on how to rehab your units and where to market your condominium, town house, or home to find the ideal tenant, along with simple things to do to ensure your tenants stay long term.</p>
+                            <p>
+                                And will learn how, by using the passive income generated from your rental properties, combined with the right mindset, you can pay off the mortgage early, while purchasing more properties without refinancing them. This will allow you to repeat this real estate investment strategy again
+                                and again.
+                            </p>
+                            <p>Plus, you will learn how, by being a private landlord, you too can retire in twenty-three years, completely debt free, living solely off of the income from your rental properties.</p>
                         </div>
 
                         <div className="pt-4">
                             <a href={book.amazonLink} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-3 px-10 py-4 hover:bg-accent3 bg-accent2 text-white text-sm tracking-wider uppercase transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 group`}>
-                                Get Your Copy on Amazon
+                                Get Your Copy Here
                                 <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
                             </a>
-                            <p className="mt-4 text-sm text-gray-500 font-light">Available in Hardcover, Paperback, and Kindle</p>
+                            <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-6">
+                                {/* Language */}
+                                <div className="space-y-1">
+                                    <p className="text-xs tracking-wider text-secondary/80 font-light italic">Language</p>
+                                    <p className="text-xs font-medium  text-secondary/40">{book.language}</p>
+                                </div>
+
+                                {/* Publisher */}
+                                <div className="space-y-1">
+                                    <p className="text-xs tracking-wider text-secondary/80 font-light italic ">Publisher</p>
+                                    <p className="text-xs font-medium  text-secondary/40">{book.Publisher}</p>
+                                </div>
+
+                                {/* Release date */}
+                                <div className="space-y-1">
+                                    <p className="text-xs tracking-wider text-secondary/80 font-light italic">Release date</p>
+                                    <p className="text-xs font-medium  text-secondary/40">{book.ReleaseDate}</p>
+                                </div>
+
+                                {/* ISBN */}
+                                <div className="space-y-1">
+                                    <p className="text-xs tracking-wider text-secondary/80 font-light italic">ISBN</p>
+                                    <p className="text-xs font-medium  text-secondary/40">{book.ISBN}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
